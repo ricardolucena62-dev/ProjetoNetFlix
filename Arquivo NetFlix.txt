@@ -1,0 +1,39 @@
+ Trabalhando com API
+
+Bem , primeiramente buscamos nossa chave API fazendo a solicitação.  EX : 034f17ec-8079-403c-b55a-5286bfd46b53
+Depois, usamos essa chave para acessar os documentos de conecção :  EX : https://atway.tiagoaguiar.co/fenix/netflixapp/home?apiKey=034f17ec-8079-403c-b55a-5286bfd46b53
+Apos isso, podemos melhorar a nossa visão do documento json usando uma extensão do google chrome : https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+Ativando essa extensão conseguimos visualisar melhor esse documeto. Esse documento json tem os dados necessários e a chave de conexão para fazermos a requisição de informação de dados para 
+usarmos nas nossas aplicações. 
+
+				
+			Comunicação http com o Servidor 
+
+1 - informar ao sistema do android que vamos estabelecer uma conexão via http com a internet.Informar permissão no manifest : user-permissio android:name = "nandroid.permission.INTERNET"
+2- Toda essa comunicação é assincrona, pois fazer isso simuntaniamente sem a tread da crash no app, usamos uma tread paralela como no banco de dados.
+3- criamos uma package para trabalhar essa tarefa chamada util . Criamos uma class CategoryTask detro da package util,com isso, criamos a função "execute" com parametro url:String
+dentro da função criamos uma "val exercutor" que recebe Executors.newSingleThreadExecutor().Agora, instaciamos a função executor.execute{} para abrir uma nova thread e fazer a conexão via http.
+4-Dentro da nova thread exercutor.execute{} instaciamos uma class URL(url) que recebe o parametro da metodo e colocamos dentro de uma val requestURL.Depois, executamos o requestURL.openConnection() 
+para abrir a conexão  e fazermos um castin para "as HttpsURLconnection", Pois o site ultiliza uma conexão Https, e guardamos em uma "val urlConnection" .
+
+5- logica para tempo de resposta da conexão e leitura :
+instanciamos uma urlConnection.readTimeout = 2000 // tempo de leitura(2s) 2 segundos
+e
+instanciamos uma urlConnection.connectionTimeout = 2000 // tempo de conexão (2s) 
+
+6- busca as informações: instaciamos o urlConection.responseCode, atribuimos dentro de uma variavel  para buscar os dados via https e esperarmos uma resposta. Essa conexão espera receber uma resposta 
+em numero, se o numero for maior que 400 ele vai da erro, se menor, ele vai da certo. Fazemos essa comparação com a val statuscode em condições if.
+
+7- apos a verificação do statuscode se ele for maior que 400 cai em um tratamento de exceções IOException.
+e vai para o cath(e:IOException) colocamos um try detro da segunda UI-thread.
+
+8-passando por esse teste, iniciamos a busca de dados byte a byte criamos uma variavel Val stream = urlConection.inputStream para buscar a sequencia de bytes.
+9-Agora criamos uma val jsonAsString = stream.bufferedReader().use{it.readText()} para transformar bytes em String
+10- Usamos o Log.i para acompanhar a sequencia logica.
+
+11- intanciamos a class CategoryTask na Main e instanciamos o metodu execute passando o endereço url da Api como parametro entre aspas para informar que é uma String. 
+ 
+						Comunicação http com o Servidor  (Segunda forma)
+	
+
+ 

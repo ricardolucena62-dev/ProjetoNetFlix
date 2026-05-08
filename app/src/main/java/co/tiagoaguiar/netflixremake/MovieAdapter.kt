@@ -1,5 +1,6 @@
 package co.tiagoaguiar.netflixremake
 
+import android.graphics.Bitmap
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,8 +8,12 @@ import android.widget.ImageView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import co.tiagoaguiar.netflixremake.model.Movie
+import co.tiagoaguiar.netflixremake.util.DownloadImageTask
+import com.squareup.picasso.Picasso
 
-class MovieAdapter(private val movies : List<Movie>, @LayoutRes private val layoutId: Int ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
+class MovieAdapter(private val movies : List<Movie>, @LayoutRes private val layoutId: Int,
+    private val onItemClickListener: ((Int) -> Unit)? = null
+    ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         // Espera que a gente infle um layout pra ele e informe o viewHolder.
@@ -31,9 +36,14 @@ class MovieAdapter(private val movies : List<Movie>, @LayoutRes private val layo
      inner class MovieViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
             fun bind (movie:Movie){
                 val imageCover: ImageView =itemView.findViewById(R.id.img_cover)
-
-                // aqui vai ser trocado por uma URL.
-                //imageCover.setImageResource(movie.coverUrl)
+                imageCover.setOnClickListener{
+                    onItemClickListener?.invoke(movie.id)
+                }
+               DownloadImageTask(object : DownloadImageTask.Callback{
+                   override fun onResult(bitmap: Bitmap) {
+                       imageCover.setImageBitmap(bitmap)
+                   }
+               }).execute(movie.coverUrl)
          }
      }
 
