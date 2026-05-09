@@ -39,42 +39,23 @@ activity/ → telas principais do aplicativo<br><br>
 
 ▶️ Como Executar o Projeto
 
-1.
-Clone o repositório<br><br>
+1.Clone o repositório<br><br>
 git clone https://github.com/ricardolucena62-dev/ProjetoNetFlix.git<br><br>
-2.<br><br>
-Abra no Android Studio<br><br>
+2.Abra no Android Studio<br><br>
 Clique em Open<br><br>
 Selecione a pasta do projeto<br><br>
-3.<br><br>
-Execute o aplicativo<br><br>
+3.Execute o aplicativo<br><br>
 Utilize um emulador Android ou<br><br>
 Conecte um dispositivo físico<br><br>
-
 Depois clique em ▶️ Run.
+
 
 🎯 Objetivo de Aprendizado
 
 Durante o desenvolvimento deste projeto foi possível praticar:
 
-Desenvolvimento Android com Kotlin<br><br>
-Android Studio<br><br>
-Criação de telas modernas com XML<br><br>
-Uso de RecyclerView para manipulação de listas<br><br>
-Uso do adapter<br><br>
-uso do Toast<br><br>
-Uso do Progree Bar<br><br>
-Uso do Toolbar<br><br>
-Json<br><br>
-Uso do Bitmap<br><br>
-Uso do Stream<br><br>
-Uso do Buffered<br><br>
-Navegação entre telas<br><br>
-Vida util de telas<br><br>
-Pasta Res<br><br>
-Android Manifest<br><br>
-Organização de código em camadas<br><br>
-Estruturação de projetos Android<br><br>
+Desenvolvimento Android com Kotlin, Android Studio, Criação de telas modernas com XML, Uso de RecyclerView para manipulação de listas
+Uso do adapter, uso do Toast, Uso do Progree Bar, Uso do Toolbar, Json, Uso do Bitmap, Uso do Stream, Uso do Buffered, Navegação entre telas, Vida util de telas, Pasta Res, Android Manifest, Organização de código em camadas Estruturação de projetos Android dentre dentre outras.
 
 📸 Preview
 
