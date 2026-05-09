@@ -79,10 +79,12 @@ Estruturação de projetos Android
 ## 📸 Preview
 
 Tela Inicial
-![Tela Inicial](Telaprincipal.jpeg)
+![Tela Inicial](ProjetoNetflix
+/Tela principal.jpeg)
 
 Tela de Detalhes
-![Detalhes](Telasecudaria.jpeg)
+![Detalhes](ProjetoNetflix
+/Tela secudaria.jpeg)
 
 ⭐ Considerações
 
