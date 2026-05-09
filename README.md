@@ -79,12 +79,10 @@ Estruturação de projetos Android
 ## 📸 Preview
 
 Tela Inicial
-![Tela Inicial](ProjetoNetflix
-/Tela principal.jpeg)
+![Tela Inicial](https://github.com/ricardolucena62-dev/ProjetoNetFlix/blob/ad4a9f51b8457ad032cff0c52bb69cf55f2be09f/Tela%20principal.jpeg)
 
 Tela de Detalhes
-![Detalhes](ProjetoNetflix
-/Tela secudaria.jpeg)
+![Detalhes](https://github.com/ricardolucena62-dev/ProjetoNetFlix/blob/350129a44d9afe80f967d41a6db039c2d89b0778/Tela%20secundaria.jpeg)
 
 ⭐ Considerações
 
