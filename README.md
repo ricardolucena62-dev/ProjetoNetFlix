@@ -13,7 +13,7 @@ finalidade exclusivamente acadêmica e de aprendizado.
 
 🚀 Tecnologias Utilizadas
 
-Kotlin
+Kotlin / 
 Android Studio
 
 obs : O professor ultilizou poucas tecnologias modernas pois queria apresentar um projeto mobile ultilizando kotlin puro e mostrar que poderia 
