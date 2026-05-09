@@ -48,7 +48,7 @@ Selecione a pasta do projeto<br><br>
 Utilize um emulador Android ou<br><br>
 Conecte um dispositivo físico<br><br>
 Depois clique em ▶️ Run.
-
+<br><br>
 
 🎯 Objetivo de Aprendizado
 
