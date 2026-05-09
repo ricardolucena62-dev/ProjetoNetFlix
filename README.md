@@ -76,13 +76,12 @@ Android Manifest
 Organização de código em camadas
 Estruturação de projetos Android
 
-## 📸 Preview
+📸 Preview
 
-Tela Inicial
-![Tela Inicial](https://github.com/ricardolucena62-dev/ProjetoNetFlix/blob/ad4a9f51b8457ad032cff0c52bb69cf55f2be09f/Tela%20principal.jpeg)
-
-Tela de Detalhes
-![Detalhes](https://github.com/ricardolucena62-dev/ProjetoNetFlix/blob/350129a44d9afe80f967d41a6db039c2d89b0778/Tela%20secundaria.jpeg)
+<p align="center">
+  <img src="https://github.com/ricardolucena62-dev/ProjetoNetFlix/blob/ad4a9f51b8457ad032cff0c52bb69cf55f2be09f/Tela%20principal.jpeg" width="250"/>
+  <img src="https://github.com/ricardolucena62-dev/ProjetoNetFlix/blob/350129a44d9afe80f967d41a6db039c2d89b0778/Tela%20secundaria.jpeg" width="250"/>
+</p>
 
 ⭐ Considerações
 
