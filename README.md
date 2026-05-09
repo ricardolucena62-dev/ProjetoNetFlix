@@ -21,35 +21,35 @@ fazer as mesmas coisas que as tecnologias atuais fazem. Por exemplo, poderiamos 
 HTTP para acessa a URL , baixa os dados da imagem ,converte em Bitmap e devolve no callback.
 
 📱 Funcionalidades
-Exibição de categorias de filmes
-Lista horizontal de filmes
-Tela de detalhes do filme
-Exibição de filmes similares
-Carregamento de imagens
-Interface inspirada na Netflix
+Exibição de categorias de filmes<br><br>
+Lista horizontal de filmes<br><br>
+Tela de detalhes do filme<br><br>
+Exibição de filmes similares<br><br>
+Carregamento de imagens <br><br>
+Interface inspirada na Netflix <br><br>
 
 🗂️ Estrutura do Projeto
 
 O projeto está organizado em:
 
-model/ → classes de modelo
-util/ → tarefas utilitárias e carregamento de dados/imagens
-adapter/ → adapters das listas RecyclerView
-activity/ → telas principais do aplicativo
+model/ → classes de modelo<br><br>
+util/ → tarefas utilitárias e carregamento de dados/imagens<br><br>
+adapter/ → adapters das listas RecyclerView<br><br>
+activity/ → telas principais do aplicativo<br><br>
 
 ▶️ Como Executar o Projeto
 
 1.
-Clone o repositório
-git clone https://github.com/ricardolucena62-dev/ProjetoNetFlix.git
-2.
-Abra no Android Studio
-Clique em Open
-Selecione a pasta do projeto
-3.
-Execute o aplicativo
-Utilize um emulador Android ou
-Conecte um dispositivo físico
+Clone o repositório<br><br>
+git clone https://github.com/ricardolucena62-dev/ProjetoNetFlix.git<br><br>
+2.<br><br>
+Abra no Android Studio<br><br>
+Clique em Open<br><br>
+Selecione a pasta do projeto<br><br>
+3.<br><br>
+Execute o aplicativo<br><br>
+Utilize um emulador Android ou<br><br>
+Conecte um dispositivo físico<br><br>
 
 Depois clique em ▶️ Run.
 
@@ -57,24 +57,24 @@ Depois clique em ▶️ Run.
 
 Durante o desenvolvimento deste projeto foi possível praticar:
 
-Desenvolvimento Android com Kotlin
-Android Studio
-Criação de telas modernas com XML
-Uso de RecyclerView para manipulação de listas
-Uso do adapter
-uso do Toast
-Uso do Progree Bar
-Uso do Toolbar
-Json
-Uso do Bitmap
-Uso do Stream
-Uso do Buffered
-Navegação entre telas
-Vida util de telas
-Pasta Res
-Android Manifest
-Organização de código em camadas
-Estruturação de projetos Android
+Desenvolvimento Android com Kotlin<br><br>
+Android Studio<br><br>
+Criação de telas modernas com XML<br><br>
+Uso de RecyclerView para manipulação de listas<br><br>
+Uso do adapter<br><br>
+uso do Toast<br><br>
+Uso do Progree Bar<br><br>
+Uso do Toolbar<br><br>
+Json<br><br>
+Uso do Bitmap<br><br>
+Uso do Stream<br><br>
+Uso do Buffered<br><br>
+Navegação entre telas<br><br>
+Vida util de telas<br><br>
+Pasta Res<br><br>
+Android Manifest<br><br>
+Organização de código em camadas<br><br>
+Estruturação de projetos Android<br><br>
 
 📸 Preview
 
