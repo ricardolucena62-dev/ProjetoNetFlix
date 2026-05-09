@@ -76,7 +76,13 @@ Android Manifest
 Organização de código em camadas
 Estruturação de projetos Android
 
-📸 Preview
+## 📸 Preview
+
+Tela Inicial
+![Tela Inicial](Telaprincipal.jpeg)
+
+Tela de Detalhes
+![Detalhes](Telasecudaria.jpeg)
 
 ⭐ Considerações
 
